@@ -1,12 +1,12 @@
 import styled, { createGlobalStyle } from "styled-components";
-//import BGImage from "./images/nattu-adnan-unsplash.jpg";
+import background from "./assets/hd-wallpaper-g20f565d63_1920.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
   }
   body {
-    background-color: lightgrey;
+    background-image: url(${background});
     background-size: cover;
     margin: 0;
     padding: 0 20px;
