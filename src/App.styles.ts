@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import background from "./assets/hd-wallpaper-g20f565d63_1920.jpg";
+import background from "./assets/backgroundImg.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {

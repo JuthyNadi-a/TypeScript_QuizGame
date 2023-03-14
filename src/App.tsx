@@ -24,7 +24,7 @@ const App: React.FC = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
-  const startTrivia = async () => {
+  const startQuiz = async () => {
     setLoading(true);
     setGameOver(false);
     const newQuestions = await fetchQuizQuestions(
@@ -74,7 +74,7 @@ const App: React.FC = () => {
       <Wrapper>
         <h1>REACT QUIZ</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-          <button className="start" onClick={startTrivia}>
+          <button className="start" onClick={startQuiz}>
             Start
           </button>
         ) : null}
